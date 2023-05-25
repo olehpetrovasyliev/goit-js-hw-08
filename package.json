@@ -5,7 +5,7 @@
   "homepage": "https://olehpetrovasyliev.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "https://olehpetrovasyliev.github.io/goit-js-hw-08"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
