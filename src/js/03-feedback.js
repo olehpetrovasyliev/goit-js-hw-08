@@ -7,9 +7,9 @@ const storageKey = 'feedback-form-state';
 const savedStorage = localStorage.getItem(storageKey);
 
 if (savedStorage) {
-  const { email: storageEmail, message: storageMsg } = JSON.parse(savedStorage);
-  email.value = storageEmail;
-  msg.value = storageMsg;
+  const savedData = JSON.parse(savedStorage);
+  email.value = savedData.email;
+  msg.value = savedData.message;
 }
 
 const formFuncInp = evt => {
