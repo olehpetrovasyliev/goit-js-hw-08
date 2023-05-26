@@ -6,7 +6,7 @@ const msg = document.querySelector('[name="message"]');
 const storageKey = 'feedback-form-state';
 const savedStorage = localStorage.getItem(storageKey);
 
-if (storageKey) {
+if (savedStorage) {
   const { email: storageEmail, message: storageMsg } = JSON.parse(savedStorage);
   email.value = storageEmail;
   msg.value = storageMsg;
