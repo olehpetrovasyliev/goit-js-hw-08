@@ -25,10 +25,11 @@ const formFuncInp = evt => {
 form.addEventListener('input', throttle(formFuncInp, 500));
 
 const formFuncSub = evt => {
-  evt.preventDefault();
   if (email.value === '' || msg.value === '') {
-    return alert('Filll all the fields please');
+    return alert('Fill all the fields please');
   }
+  evt.preventDefault();
+
   console.log(localStorage.getItem(storageKey));
   localStorage.clear();
   email.value = '';
