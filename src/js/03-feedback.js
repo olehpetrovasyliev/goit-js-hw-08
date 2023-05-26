@@ -21,6 +21,9 @@ form.addEventListener('input', throttle(formFuncInp, 500));
 const formFuncSub = evt => {
   evt.preventDefault();
   console.log(localStorage.getItem(storageKey));
+  localStorage.clear();
+  email.value = '';
+  msg.value = '';
 };
 form.addEventListener('submit', formFuncSub);
 
