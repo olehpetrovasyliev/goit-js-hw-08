@@ -30,7 +30,7 @@ const formFuncSub = evt => {
   }
   evt.preventDefault();
 
-  console.log(JSON.parse(localStorage.getItem(storageKey)));
+  console.log(JSON.parse(savedStorage));
   localStorage.clear();
   email.value = '';
   msg.value = '';
