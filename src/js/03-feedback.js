@@ -26,6 +26,9 @@ form.addEventListener('input', throttle(formFuncInp, 500));
 
 const formFuncSub = evt => {
   evt.preventDefault();
+  if (email.value === '' || msg.value === '') {
+    return alert('Filll all the fields please');
+  }
   console.log(localStorage.getItem(storageKey));
   localStorage.clear();
   email.value = '';
