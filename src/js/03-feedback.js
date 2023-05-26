@@ -10,10 +10,6 @@ if (storageKey) {
   const { email: storageEmail, message: storageMsg } = JSON.parse(savedStorage);
   email.value = storageEmail;
   msg.value = storageMsg;
-  //   email.value = JSON.parse(localStorage.getItem(storageKey.message));
-} else {
-  email.value = '';
-  msg.value = '';
 }
 
 const formFuncInp = evt => {
